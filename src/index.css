@@ -52,6 +52,10 @@ main {
   align-items: center;
 }
 
+.count {
+  font-size: 3rem;
+}
+
 .buttons {
   margin-top: 2rem;
   justify-content: center;
@@ -75,4 +79,7 @@ button:hover {
 footer {
   background-color: var(--green);
   text-align: center;
+}
+
+@media (max-width: 1000px) {
 }
