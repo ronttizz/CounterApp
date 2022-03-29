@@ -1,7 +1,7 @@
 import React, { Component, useDebugValue } from "react";
 
-// import Button from "./Button";
-// import Counter from "./Counter";
+import Button from "../UI components/Button";
+import classes from "../UI components/Button.module.css";
 
 class Main extends Component {
   state = {
@@ -45,11 +45,11 @@ class Main extends Component {
           <h1 className="count">{this.state.counter}</h1>
         </div>
         <div className="buttons">
-          <button onClick={this.addFiveHandler}>Add five</button>
-          <button onClick={this.addOneHandler}>Add one</button>
-          <button onClick={this.resetHandler}>Reset</button>
-          <button onClick={this.removeOneHandler}>Remove one</button>
-          <button onClick={this.removeFiveHandler}>Remove five</button>
+          <Button click={this.addFiveHandler}>Add five</Button>
+          <Button click={this.addOneHandler}>Add one</Button>
+          <Button click={this.resetHandler}>Reset</Button>
+          <Button click={this.removeOneHandler}>Remove one</Button>
+          <Button click={this.removeFiveHandler}>Remove five</Button>
         </div>
       </main>
     );
