@@ -21,15 +21,19 @@ class Main extends Component {
   };
 
   removeFiveHandler = () => {
-    this.setState({
-      counter: this.state.counter - 5,
-    });
+    this.state.counter - 5 >= 0
+      ? this.setState({
+          counter: this.state.counter - 5,
+        })
+      : this.setState({ counter: 0 });
   };
 
   removeOneHandler = () => {
-    this.setState({
-      counter: this.state.counter - 1,
-    });
+    this.state.counter - 1 >= 0
+      ? this.setState({
+          counter: this.state.counter - 1,
+        })
+      : this.setState({ counter: 0 });
   };
 
   resetHandler = () => {
@@ -39,9 +43,19 @@ class Main extends Component {
   };
 
   render() {
+    let counterClass = "counter";
+
+    if (this.state.counter === 0) {
+      counterClass = "counter";
+    } else if (this.state.counter % 2 === 0) {
+      counterClass += " even";
+    } else {
+      counterClass += " odd";
+    }
+
     return (
       <main className={classes.main}>
-        <div className="counter">
+        <div className={counterClass}>
           <h1 className="count">{this.state.counter}</h1>
         </div>
         <div className="buttons">

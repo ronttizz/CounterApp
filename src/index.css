@@ -23,6 +23,14 @@ body {
   align-items: center;
 }
 
+.even {
+  background-color: blue;
+}
+
+.odd {
+  background-color: brown;
+}
+
 .count {
   font-size: 3rem;
 }
