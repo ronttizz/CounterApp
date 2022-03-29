@@ -1,7 +1,7 @@
 import React, { Component, useDebugValue } from "react";
 
 import Button from "../UI components/Button";
-import classes from "../UI components/Button.module.css";
+import classes from "./Main.module.css";
 
 class Main extends Component {
   state = {
@@ -40,7 +40,7 @@ class Main extends Component {
 
   render() {
     return (
-      <main className="main">
+      <main className={classes.main}>
         <div className="counter">
           <h1 className="count">{this.state.counter}</h1>
         </div>
