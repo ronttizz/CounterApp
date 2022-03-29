@@ -8,19 +8,13 @@
 }
 
 :root {
-  --green: rgb(0, 157, 18);
+  --greenBackground: rgb(0, 157, 18);
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 header,
@@ -30,7 +24,7 @@ footer {
 }
 
 header {
-  background-color: var(--green);
+  background-color: var(--greenBackground);
 }
 
 main {
@@ -43,7 +37,7 @@ main {
 }
 
 .counter {
-  background-color: var(--green);
+  background-color: var(--greenBackground);
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -66,7 +60,7 @@ main {
 button {
   padding: 1rem;
   margin: 0.5rem;
-  background-color: var(--green);
+  background-color: var(--greenBackground);
   border: 0;
   border-radius: 5px;
   width: 8rem;
@@ -77,6 +71,6 @@ button:hover {
 }
 
 footer {
-  background-color: var(--green);
+  background-color: var(--greenBackground);
   text-align: center;
 }
